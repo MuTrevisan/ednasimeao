@@ -930,7 +930,7 @@
     .hero-left > .scroll-cue   { order: 5; align-items: flex-start; }
 
     .photo-frame {
-      order: 6;
+      order: 0;
       margin: 0;
       width: 100%;
       max-width: 480px;
@@ -1063,30 +1063,30 @@
     <div class="hero-inner">
       <div class="hero-left">
 
-        <div class="eyebrow-wrap reveal d1">
+        <!-- foto — mobile: primeiro; desktop: move para coluna direita via CSS order -->
+        <div class="photo-frame reveal scale d1">
+          <span class="photo-tag">Psic. Edna Simeão</span>
+          <img src="perfil.png" alt="Foto da Psicóloga Maria Edna Simeão">
+        </div>
+
+        <div class="eyebrow-wrap reveal d2">
           <span class="eyebrow">Psicologia Clínica · Perinatal</span>
         </div>
 
-        <h1 class="reveal d2">
+        <h1 class="reveal d3">
           <span class="name">Maria Edna</span>
           <span class="name-sub">Simeão</span>
           <span class="role">Cuidando da mente<br/>em cada fase da vida.</span>
         </h1>
 
-        <div class="badge-row reveal d3">
+        <div class="badge-row reveal d4">
           <span class="badge badge-teal">Atendimento On-line</span>
           <span class="badge badge-rose">Mães 35+</span>
           <span class="badge badge-teal">TCC</span>
           <span class="badge badge-rose">Menopausa</span>
         </div>
 
-        <!-- foto — mobile: aqui; desktop: coluna direita via CSS grid -->
-        <div class="photo-frame reveal scale d3">
-          <span class="photo-tag">Psic. Edna Simeão</span>
-          <img src="perfil.png" alt="Foto da Psicóloga Maria Edna Simeão">
-        </div>
-
-        <div class="hero-cta reveal d4">
+        <div class="hero-cta reveal d5">
           <a class="btn btn-primary" href="#cta">
             Agendar consulta
             <span class="arrow" aria-hidden="true">→</span>
